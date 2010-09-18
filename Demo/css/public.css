@@ -1,0 +1,213 @@
+/**************************************************************
+/* public.css
+/* jpl 11/06/09
+/*
+/*	Front end styles
+/*************************************************************/
+
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Global HTML Resets */
+
+html {
+	padding:				0;
+	margin:					0;
+}
+
+body {
+	text-align:				center;
+	padding:				0;
+	margin:					20px 20px 20px 100px;
+	background:				#000;
+	font-family:			Tahoma, Verdana, Arial, Sans-Serif;
+	font-size:				15px;
+	color:					#FFF79F;
+}
+
+/* End SECTION::Global HTML Resets
+/*------------------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Main window and pages within  */
+
+.mainWindow {
+	height:					450px;
+	width:					400px;
+	background:				#fff;
+	padding:				20px;
+	-moz-border-radius:		20px;
+	-webkit-border-radius:	20px;
+	margin:					auto;
+	-moz-user-select:		none;
+	-webkit-user-select:	none;
+}
+
+.mainWindow #viewPort {
+	height:					100%;
+	width:					100%;
+	overflow:				hidden;
+	background:				#000;
+	-moz-border-radius:		15px;
+	-webkit-border-radius:	15px;
+}
+
+.mainWindow #viewPort .page {
+	position:				relative;
+	height:					450px;
+	width:					400px;
+	background:				#A00;
+	background:				-moz-linear-gradient(top, #900, #C00 30%, #400 90%);
+	background:				-webkit-gradient(linear, left top, left bottom, color-stop(0, #900000), color-stop(0.3, #c00000), color-stop(0.9, #400000));
+	filter:					progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#A00000, endColorstr=#400000);
+	-ms-filter:				"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#A00000, endColorstr=#400000)";
+	font-size:				16px;
+	float:					left;
+	-moz-border-radius:		15px;
+	-webkit-border-radius:	15px;
+	text-align:				left;
+}
+
+.mainWindow .page .inner {
+	padding:			20px 40px;
+}
+
+.page .pageContent {
+	margin-top:				30px;
+	background:				#400;
+	background:				-moz-linear-gradient(top, #300, #500 30%, #200 90%);
+	background:				-webkit-gradient(linear, left top, left bottom, color-stop(0, #300000), color-stop(0.3, #500000), color-stop(0.9, #200000));
+	filter:					progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#600000, endColorstr=#200000);
+	-ms-filter:				"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#600000, endColorstr=#200000)";
+	-moz-border-radius:		10px;
+	-webkit-border-radius:	10px;
+	padding:				10px 10px 10px 20px;
+	height:					300px;
+	
+}
+
+/* End SECTION::Main window and pages within
+/*------------------------------------------------------------------------------*/
+
+	.item {
+		margin-top:				6px;
+		-moz-border-radius:		6px;
+		-webkit-border-radius:	3px;
+		position:				relative;
+		width:					320px;
+	}
+	.item .message {
+		font-size:				11px;
+		position:				absolute;
+		top:					5px;
+		right:					0px;
+	}
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Power Meters  */
+	
+	.powerMeter {
+		height:					20px;
+		width:					320px;
+		padding:				1px;
+		background:				#000;
+		-moz-border-radius:		6px;
+		-webkit-border-radius:	6px;
+	}
+	.powerMeter .power {
+		height:					100%;
+		background:				#FDFF1F;
+		background:				-moz-linear-gradient(top, #FDFF1F, #FEFF6F 30%, #fff 40%, #CECF33);
+		background:				-webkit-gradient(linear, left top, left bottom, color-stop(0, #FDFF1F), color-stop(0.4, #fff), color-stop(0.3, #FEFF6F), color-stop(1.0, #CECF33));
+		filter:					progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FDFF1F, endColorstr=#BEBF33);
+		-ms-filter:				"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FDFF1F, endColorstr=#BEBF33)";
+		-moz-border-radius:			6px 0 0 6px;
+		-webkit-border-radius:		6px 0 0 6px;
+	}
+	.powerMeter .power.full {
+		-moz-border-radius:		6px;
+		-webkit-border-radius:	6px;
+	}
+	
+	.verticalHolder { margin-right: 20px; }
+	
+	.powerMeter.vertical {
+		height:					100px;
+		width:					40px;
+		position:				relative;
+	}
+	.powerMeter.vertical div.power {
+		position:				absolute;
+		width:					40px;
+		left:					1px;
+		bottom:					1px;
+		background:				#197344;
+		background:				-moz-linear-gradient(left, rgb(22,101,60) 11%, rgb(49,132,90) 56%, rgb(79,159,117) 78%);
+		background:				-webkit-gradient(linear, left top, right top, color-stop(0.11, rgb(22,101,60)), color-stop(0.56, rgb(49,132,90)), color-stop(0.78, rgb(79,159,117)));
+		filter:					progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#197344, endColorstr=#39A354);
+		-ms-filter:				"progid:DXImageTransform.Microsoft.gradient (GradientType=1, startColorstr=#197344, endColorstr=#39A354)";
+		-moz-border-radius:		0 0 6px 6px;
+		-webkit-border-radius:	0 0 6px 6px;
+		vertical-align:			bottom;
+	}
+	.powerMeter.vertical div.power.full {
+		-moz-border-radius:			6px;
+		-webkit-border-radius:		6px;
+	}
+	
+	
+/* End SECTION::Power Meters
+/*------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Roar  */
+.roar-body{position:absolute; font:12px/14px "Lucida Grande",Arial,Helvetica,Verdana,sans-serif; color:#fff; text-align:left; z-index:999}
+.roar{position:absolute; width:300px; cursor:pointer}
+.roar-bg{position:absolute; z-index:1000; width:100%; height:100%; left:0; top:0; background-color:#555; -moz-border-radius:10px; -webkit-border-radius:5px; -webkit-box-shadow:0 0 5px rgba(0,0,0,0.5)}
+.roar-body-ugly .roar{background-color:#333}
+.roar-body-ugly .roar-bg{display:none}
+.roar h3{position:relative; padding:15px 10px 15px; margin:0; border:0; font-size:13px; color:#fff; z-index:1002}
+.roar p{position:relative; padding:0px 10px 10px; margin:-5px 0 0 0; font-size:12px; color:#fff; z-index:1002}
+/* End SECTION::Roar
+/*------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------*/
+/* SECTION::Universal Utility  */
+	
+	.left       { float: left; }			td.left			{ text-align: left;  float: none; }
+	.right      { float: right;}			td.right		{ text-align: right; float: none; }
+	.clear      { clear: both; }
+	
+	.inline		{ display: inline; }
+	.block		{ display: block; }
+	.inlineBlock{ display: inline-block; }
+	
+	.justify	{ text-align: justify; }
+	.bold		{ font-weight: 900; }
+	.relative	{ position: relative; }
+	.absolute	{ position: absolute; }
+	.clickable	{ cursor: pointer; }
+	
+	.center     { text-align: center; }				/* CENTER elements contained by me  */
+	.centered   { display: block; margin: 0 auto; } /* make me CENTERED in my container */
+	
+	.verticalMiddle td, td.verticalMiddle	{ vertical-align: middle; }
+	div.verticalMiddle						{ vertical-align: middle; }
+	.verticalMiddle>*						{ vertical-align: middle; }
+	
+	.hidden     	{ display: none; }
+	.truncatedText	{ overflow: hidden; }
+	.hideOverflow	{ overflow: hidden; }
+	
+	.nextElement	{ margin-top:  6px; }
+	.nextSection	{ margin-top: 16px; }
+	
+/* End SECTION::Universal Utility
+/*------------------------------------------------------------------------------*/
+
